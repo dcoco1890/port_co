@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     $("#port").on("click", function() {
         remove();
         $(".portfolio").removeClass("not-active").addClass("active slide-in-left");
@@ -18,5 +20,7 @@ $(document).ready(function() {
     function remove() {
         $(".active").removeClass("active").addClass("not-active");
     }
+
+    $(window).on("scroll", remove);
 
 });
