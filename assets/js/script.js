@@ -1,5 +1,11 @@
 $(document).ready(function() {
+
+    const head = $("header");
     const links = $(".navi");
+
+    const nav = $(".navigate");
+    var offset = nav.offset();
+    var top = offset.top;
 
     function remove() {
         $(".active").removeClass("active").addClass("not-active");
@@ -28,6 +34,20 @@ $(document).ready(function() {
 
     function navFix() {
 
+
+
+        if (window.scrollY >= top) {
+            $("body").css({ "padding-top": top });
+            nav.addClass("fixed");
+            head.css({ "display": "none" });
+            $("body").addClass("fixed-nav");
+
+        } else {
+            $("body").css({ "padding-top": 0 });
+            nav.removeClass("fixed");
+            $("body").removeClass("fixed-nav");
+            head.css({ "display": "" });
+        }
     }
 
     $(window).on("scroll", navFix);
