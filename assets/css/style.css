@@ -1,3 +1,7 @@
+h2.display-3 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 nav {
     top: 0;
     width: 100%;
@@ -20,6 +24,22 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background: rgb(34, 193, 195);
+    -webkit-transition-property: all;
+    /* Safari */
+    -webkit-transition-duration: 2s;
+    /* Safari */
+    transition-property: all;
+    transition-duration: .3s;
+}
+
+li.cohen {
+    background-color: rgba(252, 253, 255, 0.7063200280112045);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 header {
@@ -44,6 +64,7 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: initial;
 }
 
 img.rounded-circle {

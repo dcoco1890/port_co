@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    const links = $(".navi");
 
 
 
@@ -21,6 +22,15 @@ $(document).ready(function() {
         $(".active").removeClass("active").addClass("not-active");
     }
 
-    $(window).on("scroll", remove);
+    links.on("click", function() {
+        let area = $(this).attr("id");
+        console.log(area);
+    })
+
+    function navFix() {
+
+    }
+
+    $(window).on("scroll", navFix);
 
 });
