@@ -7,10 +7,6 @@ $(document).ready(function() {
     var offset = nav.offset();
     var top = offset.top;
 
-    function remove() {
-        $(".active").removeClass("active").addClass("not-active");
-    }
-
     // when you click on a link, the text of the ID attribute is stored in the area variable
     // call remove, then based on ID active is removed and correct area is made active
     links.on("click", function() {
@@ -20,7 +16,7 @@ $(document).ready(function() {
         remove();
         switch (area) {
             case "homepage":
-                $(".blockquote").removeClass("not-active").addClass("active slide-in-left");
+                $(".about").removeClass("not-active").addClass("active slide-in-left");
                 break;
             case "port":
                 $(".portfolio").removeClass("not-active").addClass("active slide-in-left");
@@ -30,11 +26,14 @@ $(document).ready(function() {
                 break;
         }
 
-    })
+    });
+
+    // helper function for nav li clicks
+    function remove() {
+        $(".active").removeClass("active").addClass("not-active");
+    }
 
     function navFix() {
-
-
 
         if (window.scrollY >= top) {
             $("body").css({ "padding-top": top });
