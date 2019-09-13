@@ -35,10 +35,11 @@ nav li:hover {
     /* Safari */
     transition-property: all;
     transition-duration: .3s;
+    transform: scale(1);
 }
 
 li.cohen {
-    background-color: rgba(252, 253, 255, 0.7063200280112045);
+    background-color: rgba(252, 253, 255, 0.8);
     color: rgba(0, 0, 0, 0.8);
 }
 
