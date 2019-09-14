@@ -3,6 +3,7 @@ $(document).ready(function() {
     const head = $("header");
     const links = $(".navi");
 
+
     const nav = $(".navigate");
     var offset = nav.offset();
     var top = offset.top;

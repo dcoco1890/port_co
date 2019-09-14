@@ -2,6 +2,21 @@ h2.display-3 {
     color: rgba(255, 255, 255, 0.8);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.6;
+}
+
+.me-pic {
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+}
+
 header {
     text-align: center;
     color: #F3f3f3;
@@ -24,7 +39,7 @@ header {
 .div2 {
     max-width: 650px;
     margin: 80px auto;
-    padding: 50px;
+    padding: 40px;
     transform: scale(1);
     transition: transform 0.5s;
 }
