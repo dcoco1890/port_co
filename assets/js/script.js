@@ -1,3 +1,5 @@
+let port = $(".port-el");
+
 $(document).ready(function() {
 
     const head = $("header");
@@ -50,7 +52,10 @@ $(document).ready(function() {
             head.css({ "display": "" });
         }
     }
-
+    // port.on("click", function() {
+    //     $().slideToggle("slow");
+    // })
     $(window).on("scroll", navFix);
+
 
 });
