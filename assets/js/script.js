@@ -19,10 +19,10 @@ $(document).ready(function() {
         remove();
         switch (area) {
             case "homepage":
-                $(".about").removeClass("not-active").addClass("active puff-in-center");
+                $(".about").removeClass("not-active").addClass("active slide-in-left");
                 break;
             case "port":
-                $(".portfolio").removeClass("not-active").addClass("active puff-in-center");
+                $(".portfolio").removeClass("not-active").addClass("active slide-in-left");
                 break;
             case "contact":
                 $(".contact").removeClass("not-active").addClass("active puff-in-center");
