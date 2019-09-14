@@ -17,13 +17,13 @@ $(document).ready(function() {
         remove();
         switch (area) {
             case "homepage":
-                $(".about").removeClass("not-active").addClass("active slide-in-left");
+                $(".about").removeClass("not-active").addClass("active puff-in-center");
                 break;
             case "port":
-                $(".portfolio").removeClass("not-active").addClass("active slide-in-left");
+                $(".portfolio").removeClass("not-active").addClass("active puff-in-center");
                 break;
             case "contact":
-                $(".contact").removeClass("not-active").addClass("active slide-in-left");
+                $(".contact").removeClass("not-active").addClass("active puff-in-center");
                 break;
         }
 
@@ -33,6 +33,7 @@ $(document).ready(function() {
     function remove() {
         $(".active").removeClass("active").addClass("not-active");
     }
+
 
     function navFix() {
 
